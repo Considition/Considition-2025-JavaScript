@@ -1,0 +1,13 @@
+{
+    "type": "module",
+    "name": "considition-2025-javascript",
+    "version": "1.0.0",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node app.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "description": ""
+}
