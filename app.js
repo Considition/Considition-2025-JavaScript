@@ -71,7 +71,7 @@ function shouldMoveOnToNextTick(_response) {
 function generateTick(map, currentTick) {
     return {
         tick: currentTick,
-        customerRecommendations: generateCustomerRecommendations(_map, currentTick),
+        customerRecommendations: generateCustomerRecommendations(map, currentTick),
     };
 }
 
