@@ -23,6 +23,7 @@ export class ConsiditionClient {
             return await response.json();
         } catch (err) {
             console.error(err);
+            return null;
         }
     }
 
@@ -47,6 +48,7 @@ export class ConsiditionClient {
             return await response.json();
         } catch (err) {
             console.error(err);
+            return null;
         }
     }
 }

@@ -1,7 +1,8 @@
 import { ConsiditionClient } from "./Client.js";
 
 const apiKey = "INSERT API KEY HERE";
-const client = new ConsiditionClient("http://localhost:9090", apiKey);
+const port = "INSERT YOUR CHOSEN PORT HERE";
+const client = new ConsiditionClient(`http://localhost:${port}/api`, apiKey);
 
 const mapName = "INSERT MAP NAME HERE";
 const map = await client.getMap(mapName);
@@ -67,14 +68,14 @@ function shouldMoveOnToNextTick(_response) {
     return true;
 }
 
-function generateTick(_map, _currentTick) {
+function generateTick(map, currentTick) {
     return {
-        tick: _currentTick,
-        customerRecommendations: generateCustomerRecommendations(_map, _currentTick),
+        tick: currentTick,
+        customerRecommendations: generateCustomerRecommendations(_map, currentTick),
     };
 }
 
-function generateCustomerRecommendations(_map, _currentTick) {
+function generateCustomerRecommendations(map, currentTick) {
     // Implement recommendation generation
     return [];
 }
